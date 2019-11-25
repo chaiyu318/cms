@@ -1,0 +1,9 @@
+
+server:
+  post:9999
+spring:
+  datasource:
+    driver-class-name:com.mysql.cj.jdbc.Driver
+    url:jdbc:mysql://47.94.242.159:3306/cms?useunicode=true;&characterEncoding=utf8
+    username:root
+    password:root
