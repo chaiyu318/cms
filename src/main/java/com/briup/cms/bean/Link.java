@@ -1,5 +1,6 @@
 package com.briup.cms.bean;
 
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="cms_link")
+@ApiModel
 public class Link implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

@@ -34,7 +34,7 @@ public class LinkController {
    @ApiOperation("删除链接")
    @ApiImplicitParam(name = "id",value = "链接id",paramType = "query",dataType = "int",required = true)
    public Message deleteLink(int id) {
-      linkService.deleteLink(id);
+      linkService.deleteByIdLink(id);
       return MessageUtil.success();
    }
 
@@ -46,7 +46,7 @@ public class LinkController {
       return MessageUtil.success(link);
    }
 
-   @GetMapping("/update")
+   @PostMapping("/update")
    @ApiOperation("更新")
    public Message update(Link link) {
       linkService.saveOrUpdateLink(link);

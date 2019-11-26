@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ILinkService {
     void saveOrUpdateLink(Link link) throws CustomerException;
-    void deleteLink(int id) throws CustomerException;
+    void deleteByIdLink(int id) throws CustomerException;
     Link queryById(int id) throws CustomerException;
     List<Link> getAllLink() throws CustomerException;
 }

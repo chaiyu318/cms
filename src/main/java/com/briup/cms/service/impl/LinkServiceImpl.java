@@ -26,7 +26,7 @@ public class LinkServiceImpl implements ILinkService {
 
 
     @Override
-    public void deleteLink(int id) throws CustomerException {
+    public void deleteByIdLink(int id) throws CustomerException {
         linkDao.deleteById(id);
     }
 
